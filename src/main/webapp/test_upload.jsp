@@ -21,9 +21,20 @@
 		</div>
 	</form>
 	
-	<h1>일반 폼 전송</h1>
+	<h1>일반 폼 전송, POST</h1>
 
 	<form action="usr/genFile/doUpload" method="POST">
+		<input type="hidden" name="attr1" value="값1" />
+		<input type="hidden" name="attr2" value="값2" />
+		<div>
+			<span>업로드</span>
+			<input type="submit" value="전송" />
+		</div>
+	</form>
+	
+	<h1>일반 폼 전송, GET</h1>
+
+	<form action="usr/genFile/doUpload" method="GET">
 		<input type="hidden" name="attr1" value="값1" />
 		<input type="hidden" name="attr2" value="값2" />
 		<div>
